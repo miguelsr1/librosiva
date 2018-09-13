@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.persistence.EntityManager" name="entityManager">
+      <Properties>
+        <Property name="persistenceUnit" type="java.lang.String" value="SkyCompVtaPU"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="AdministradorEntidades.getInstance().getEM();"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="listVentaF">
+      <Properties>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServVtaConsumidorF.getListado();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.VentaConsumidor&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="listSucursal">
+      <Properties>
+        <Property name="modifiableWrapper" type="boolean" value="true"/>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServSucursal.getListado();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.Sucursal&gt;"/>
+      </AuxValues>
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="diaVtaConFLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="maquinaLabel" min="-2" max="-2" attributes="0"/>
+                                  <Component id="totalVtaConFLabel" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="totalVtaConFField" min="-2" pref="75" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                      <Component id="tercerosVtaConFLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="maquinaField" min="-2" pref="75" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="vtaExenConFLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="numVtaFField" min="-2" pref="75" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="diaVtaConFLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="tercerosVtaConFField" alignment="0" pref="75" max="32767" attributes="0"/>
+                                          <Component id="vtaExenConFField" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="vtaGravConFLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="codigoSucursalLabel" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="diaVtaConFField" min="-2" pref="75" max="-2" attributes="0"/>
+                                      <EmptySpace pref="80" max="32767" attributes="0"/>
+                                      <Component id="desdeLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="codigoSucursalCBox" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="vtaGravConFField" min="-2" pref="75" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                                              <Component id="exporVtaConFLabel" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <Component id="desdeField" min="-2" pref="75" max="-2" attributes="0"/>
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="hastaLabel" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="hastaField" min="-2" pref="75" max="-2" attributes="0"/>
+                                          <Component id="exporVtaConFField" min="-2" pref="75" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="31" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="masterScrollPane" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="diaVtaConFLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desdeLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="desdeField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hastaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="hastaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="diaVtaConFField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="diaVtaConFLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numVtaFField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="vtaExenConFLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="vtaExenConFField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="vtaGravConFField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="exporVtaConFLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="exporVtaConFField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="vtaGravConFLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="maquinaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="maquinaField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="tercerosVtaConFLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tercerosVtaConFField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoSucursalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoSucursalCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalVtaConFLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalVtaConFField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="masterScrollPane" min="-2" pref="316" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="diaVtaConFLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="D&#xed;a:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="desdeLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Desde:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="hastaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Hasta:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="maquinaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Maquina:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="vtaExenConFLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Locales Exentas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="vtaGravConFLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Locales Gravadas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="exporVtaConFLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Exportaci&#xf3;n:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalVtaConFLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Total de Ventas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="tercerosVtaConFLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ventas a Terceros:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoSucursalLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sucursal:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="diaVtaConFLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="#:"/>
+      </Properties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="numVtaFField">
+      <Properties>
+        <Property name="numero" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.numVtaF}" target="numVtaFField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="numVtaFField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="diaVtaConFField">
+      <Properties>
+        <Property name="numero" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.diaVtaConF}" target="diaVtaConFField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="diaVtaConFField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="diaVtaConFFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="desdeField">
+      <Properties>
+        <Property name="numero" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.desde}" target="desdeField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="desdeField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="hastaField">
+      <Properties>
+        <Property name="numero" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.hasta}" target="hastaField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="hastaField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="maquinaField">
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.maquina}" target="maquinaField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="maquinaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="vtaExenConFField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.vtaExenConF}" target="vtaExenConFField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="vtaExenConFField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="vtaGravConFField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.vtaGravConF}" target="vtaGravConFField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="vtaGravConFField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="exporVtaConFField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.exporVtaConF}" target="exporVtaConFField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="exporVtaConFField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="totalVtaConFField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.totalVtaConF}" target="totalVtaConFField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="totalVtaConFField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="totalVtaConFFieldFocusGained"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="tercerosVtaConFField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.tercerosVtaConF}" target="tercerosVtaConFField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="tercerosVtaConFField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXComboBox" name="codigoSucursalCBox">
+      <BindingProperties>
+        <BindingProperty name="elements" source="listSucursal" target="codigoSucursalCBox" targetPath="elements" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="selectedItem" source="masterTable" sourcePath="${selectedElement.codigoSucursal}" target="codigoSucursalCBox" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="codigoSucursalCBox" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="11" style="3"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Lista de ventas al consumidor final:"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="masterScrollPane">
+      <Properties>
+        <Property name="horizontalScrollBarPolicy" type="int" value="32"/>
+        <Property name="autoscrolls" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="com.controles.JXTable" name="masterTable">
+          <Properties>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="40" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="40" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="100" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="100" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="80" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="130" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="130" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="130" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="130" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="130" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="150" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="elements" source="listVentaF" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
+              <Subbinding sourcePath="${numVtaF}">
+                <BindingParameter name="NAME" value="#"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${diaVtaConF}">
+                <BindingParameter name="NAME" value="D&#xed;a"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${desde}">
+                <BindingParameter name="NAME" value="Desde"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${hasta}">
+                <BindingParameter name="NAME" value="Hasta"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${maquina}">
+                <BindingParameter name="NAME" value="Maquina"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${vtaExenConF}">
+                <BindingParameter name="NAME" value="Locales Exentas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${vtaGravConF}">
+                <BindingParameter name="NAME" value="Locales Gravadas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${exporVtaConF}">
+                <BindingParameter name="NAME" value="Exportaci&#xf3;n"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${totalVtaConF}">
+                <BindingParameter name="NAME" value="Total de Ventas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${tercerosVtaConF}">
+                <BindingParameter name="NAME" value="Ventas a Terceros"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoSucursal}">
+                <BindingParameter name="NAME" value="Sucursal"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Sucursal.class"/>
+              </Subbinding>
+            </BindingProperty>
+          </BindingProperties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="masterTableMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

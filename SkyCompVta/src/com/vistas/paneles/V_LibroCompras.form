@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.persistence.EntityManager" name="entityManager">
+      <Properties>
+        <Property name="persistenceUnit" type="java.lang.String" value="pu"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="AdministradorEntidades.getInstance().getEM();"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="lstCompras">
+      <Properties>
+        <Property name="modifiableWrapper" type="boolean" value="true"/>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServCompras.getListado();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.Compra&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="lstDocumento">
+      <Properties>
+        <Property name="query" type="java.lang.Object" editor="org.netbeans.modules.form.j2ee.J2EEPropertyModifier$QueryBeanProperty$QueryEditor">
+          <ComponentRef name="null"/>
+        </Property>
+        <Property name="modifiableWrapper" type="boolean" value="true"/>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServDocumento.getListadoCompras();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.Documento&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="lstSucursal">
+      <Properties>
+        <Property name="modifiableWrapper" type="boolean" value="true"/>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServSucursal.getListado();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.Sucursal&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="lstModalidad">
+      <Properties>
+        <Property name="modifiableWrapper" type="boolean" value="true"/>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServModalidad.getListado();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.Modalidad&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="idCompraField">
+      <Properties>
+        <Property name="numero" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.idCompra}" target="idCompraField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="idCompraField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="masterScrollPane" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="idCompraLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="codigoOrgLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="internaExentaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="internaGravadaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="ivaCompraLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="totalCompraLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="codigoSucursalLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="internaExentaField" alignment="0" pref="130" max="32767" attributes="0"/>
+                                  <Component id="codigoOrgField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="internaGravadaField" max="32767" attributes="0"/>
+                                  <Component id="ivaCompraField" max="32767" attributes="0"/>
+                                  <Component id="totalCompraField" max="32767" attributes="0"/>
+                                  <Component id="numCompraField" alignment="0" min="-2" pref="54" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="importacionExentaLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="importacionGravadaLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="excluidoCompraLabel" min="-2" max="-2" attributes="0"/>
+                                          <Component id="retencionTerceroLabel" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="fechaCompraLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="modalidadCBox" min="-2" pref="165" max="-2" attributes="0"/>
+                              <EmptySpace pref="79" max="32767" attributes="0"/>
+                              <Component id="retencionTerceroLabel1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="retencionTerceroField" alignment="0" pref="129" max="32767" attributes="0"/>
+                                  <Component id="excluidoCompraField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="montoImpField" alignment="0" pref="129" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="codigoSucursalLabel" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="numRegOrgField" alignment="0" pref="129" max="32767" attributes="0"/>
+                                  <Component id="importacionExentaField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="importacionGravadaField" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="fechaCompraDpker" alignment="0" min="-2" pref="116" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                                      <Component id="idDocLabel" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="idDocCBox" min="-2" pref="170" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="NCompCompraLabel" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="NCompCompraField" min="-2" pref="150" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="nomOrgField" alignment="0" max="32767" attributes="0"/>
+                          <Component id="sucursalCBox" alignment="0" min="-2" pref="197" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="idCompraLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="idDocLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="fechaCompraLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="NCompCompraLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="NCompCompraField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="idDocCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="numCompraField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="fechaCompraDpker" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="codigoOrgLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoOrgField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numRegOrgField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nomOrgField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="internaExentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="internaExentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="importacionExentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="importacionExentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="internaGravadaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="internaGravadaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                      <Component id="importacionGravadaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="importacionGravadaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="ivaCompraLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ivaCompraField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="excluidoCompraLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="excluidoCompraField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="totalCompraLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalCompraField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="retencionTerceroLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="retencionTerceroField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoSucursalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sucursalCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="codigoSucursalLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="modalidadCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="retencionTerceroLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="montoImpField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="masterScrollPane" min="-2" pref="251" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="idCompraLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Id:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoSucursalLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Codigo Sucursal:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="idDocLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Documento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoOrgLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cod. Proveedor:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="fechaCompraLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fecha Compra:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="NCompCompraLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="# Documento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="internaExentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Locales Exentas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="importacionExentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Import. Exentas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="internaGravadaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Locales Gravadas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="importacionGravadaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Import. Gravadas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ivaCompraLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cr&#xe9;dito Fiscal:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalCompraLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Total Compras:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="retencionTerceroLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ret. Terceros:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="excluidoCompraLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Excluidos Impuestos:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nom. Proveedor:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="# Registro:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="11" style="3"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Listado de Compras realizadas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="retencionTerceroLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Monto:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoSucursalLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modalidad:"/>
+      </Properties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="numCompraField">
+      <Properties>
+        <Property name="numero" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.numCompra}" target="numCompraField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="numCompraField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="fechaCompraDpker">
+      <Properties>
+        <Property name="dateFormatString" type="java.lang.String" value="dd/MM/yyyy"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="date" source="masterTable" sourcePath="${selectedElement.fechaCompra}" target="fechaCompraDpker" targetPath="date" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="fechaCompraDpker" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXComboBox" name="idDocCBox">
+      <BindingProperties>
+        <BindingProperty name="elements" source="lstDocumento" target="idDocCBox" targetPath="elements" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="selectedItem" source="masterTable" sourcePath="${selectedElement.idDoc}" target="idDocCBox" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="idDocCBox" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="NCompCompraField">
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.NCompCompra}" target="NCompCompraField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="NCompCompraField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="codigoOrgField">
+      <BindingProperties>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="codigoOrgField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="codigoOrgFieldActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="numRegOrgField">
+      <Properties>
+        <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.codigoOrg.regIvaOrg}" target="numRegOrgField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="numRegOrgField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="nomOrgField">
+      <Properties>
+        <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.codigoOrg.nombreOrg}" target="nomOrgField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="nomOrgField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="internaExentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.internaExenta}" target="internaExentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="internaExentaField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="importacionExentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.importacionExenta}" target="importacionExentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="importacionExentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="internaGravadaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.internaGravada}" target="internaGravadaField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="internaGravadaField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="internaGravadaFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="importacionGravadaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.importacionGravada}" target="importacionGravadaField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="importacionGravadaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="importacionGravadaFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="ivaCompraField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.ivaCompra}" target="ivaCompraField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="ivaCompraField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="excluidoCompraField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.excluidoCompra}" target="excluidoCompraField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="excluidoCompraField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="totalCompraField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.totalCompra}" target="totalCompraField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="totalCompraField" targetPath="enabled" updateStrategy="1" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="totalCompraFieldFocusLost"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="retencionTerceroField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.retencionTercero}" target="retencionTerceroField" targetPath="text" updateStrategy="0" immediately="false">
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="retencionTerceroField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXComboBox" name="sucursalCBox">
+      <BindingProperties>
+        <BindingProperty name="elements" source="lstSucursal" target="sucursalCBox" targetPath="elements" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="selectedItem" source="masterTable" sourcePath="${selectedElement.codigoSucursal}" target="sucursalCBox" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="sucursalCBox" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXComboBox" name="modalidadCBox">
+      <BindingProperties>
+        <BindingProperty name="elements" source="lstModalidad" target="modalidadCBox" targetPath="elements" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="selectedItem" source="masterTable" sourcePath="${selectedElement.idModalidad}" target="modalidadCBox" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="modalidadCBox" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="montoImpField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.montoImp}" target="montoImpField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="montoImpField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="masterScrollPane">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="com.controles.JXTable" name="masterTable">
+          <Properties>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="40" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="100" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="250" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="130" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="110" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="elements" source="lstCompras" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
+              <Subbinding sourcePath="${numCompra}">
+                <BindingParameter name="NAME" value="#"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${fechaCompra}">
+                <BindingParameter name="NAME" value="Fecha Compra"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.util.Date.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${idDoc}">
+                <BindingParameter name="NAME" value="Documento"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Documento.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${NCompCompra}">
+                <BindingParameter name="NAME" value="# Documento"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoOrg}">
+                <BindingParameter name="NAME" value="Cod Proveedor"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Organizacion.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoOrg.regIvaOrg}">
+                <BindingParameter name="NAME" value="# Registro"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.EDITABLE" value="false"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoOrg.nombreOrg}">
+                <BindingParameter name="NAME" value="Nombre del Proveedor"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.EDITABLE" value="false"/>
+              </Subbinding>
+              <Subbinding sourcePath="${internaExenta}">
+                <BindingParameter name="NAME" value="Locales Exentas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${importacionExenta}">
+                <BindingParameter name="NAME" value="Import. Exentas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${internaGravada}">
+                <BindingParameter name="NAME" value="Locales Gravadas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${importacionGravada}">
+                <BindingParameter name="NAME" value="Import. Gravadas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${ivaCompra}">
+                <BindingParameter name="NAME" value="Cr&#xe9;dito Fiscal"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${excluidoCompra}">
+                <BindingParameter name="NAME" value="Excluidos Impuestos"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${totalCompra}">
+                <BindingParameter name="NAME" value="Total Compras"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${retencionTercero}">
+                <BindingParameter name="NAME" value="Ret. Terceros"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoSucursal}">
+                <BindingParameter name="NAME" value="Sucursal"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Sucursal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${idModalidad}">
+                <BindingParameter name="NAME" value="Modalidad"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Modalidad.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${montoImp}">
+                <BindingParameter name="NAME" value="Monto Imp"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+            </BindingProperty>
+          </BindingProperties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="masterTableMouseClicked"/>
+            <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="masterTableKeyPressed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.persistence.EntityManager" name="entityManager">
+      <Properties>
+        <Property name="persistenceUnit" type="java.lang.String" value="SkyCompVtaPU"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="AdministradorEntidades.getInstance().getEM();"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="lstVtaContribuyente">
+      <Properties>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServVtaContribuyente.getListado();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.VentaContribuyente&gt;"/>
+        <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="lstDocumento">
+      <Properties>
+        <Property name="modifiableWrapper" type="boolean" value="true"/>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServDocumento.getListadoVentas();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.Documento&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="java.util.List" name="lstSucursal">
+      <Properties>
+        <Property name="modifiableWrapper" type="boolean" value="true"/>
+        <Property name="observable" type="boolean" value="true"/>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="ServSucursal.getListado();"/>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;com.entidades.Sucursal&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="codigoOrgField">
+    </Component>
+  </NonVisualComponents>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="masterScrollPane" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="codigoOrgLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="exentaVentaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="idDocLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="diaLabel1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="totalExentaVentaLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="totVentaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="totVentaField" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <Component id="totalExentaVentaField" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <Component id="codOrg" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <Component id="exentaVentaField" alignment="0" min="-2" pref="91" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="gravadaVentaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="codigoOrgLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="totalGravadaVentaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="totIvaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="numVtaC" min="-2" pref="42" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                                              <Component id="diaLabel" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="diaField" min="-2" pref="42" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                  <Component id="totIvaField" pref="91" max="32767" attributes="0"/>
+                                                  <Component id="gravadaVentaField" max="32767" attributes="0"/>
+                                                  <Component id="totalGravadaVentaField" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="totalIvaVentaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="ivaVentaLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="codigoSucursalLabel" alignment="1" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="ivaVentaField" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <Component id="totalIvaVentaField" min="-2" pref="91" max="-2" attributes="0"/>
+                                                  <Component id="sucursalCBox" min="-2" pref="180" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="nombreOrgField" min="-2" pref="467" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                              <Component id="codigoOrgLabel2" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="numRegField" min="-2" pref="111" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="documentoCBox" min="-2" pref="180" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                                      <Component id="NCompVentaLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="txtDocumento" min="-2" pref="135" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                                      <Component id="NFormLabel" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="NFormField" min="-2" pref="111" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="52" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="diaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="diaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="diaLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numVtaC" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="documentoCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="idDocLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="NCompVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="NFormLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="NFormField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="txtDocumento" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="codOrg" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoOrgLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoOrgLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="nombreOrgField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoOrgLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="numRegField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="exentaVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="exentaVentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="gravadaVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="gravadaVentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ivaVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="ivaVentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="totalExentaVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalExentaVentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalGravadaVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalGravadaVentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalIvaVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totalIvaVentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="totVentaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totVentaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totIvaLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="totIvaField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="codigoSucursalLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="sucursalCBox" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="masterScrollPane" min="-2" pref="371" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="diaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Dia:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="idDocLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Documento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="NCompVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="# Documento:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="NFormLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Formulario Unico:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoOrgLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cod. Cliente:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="exentaVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Venta Exenta:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="gravadaVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Venta Gravada:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ivaVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="D&#xe9;bito Fiscal:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalExentaVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Terceros Exentas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalGravadaVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Terceros Gravadas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totalIvaVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="D&#xe9;bito Terceros:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totVentaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Total Ventas:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="totIvaLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Impuesto percibido:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoSucursalLabel">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sucursal:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoOrgLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre Cliente:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="codigoOrgLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="No. Registro:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="diaLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="#:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="DejaVu Sans" size="11" style="3"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Lista de ventas al consumidor final:"/>
+      </Properties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="numVtaC">
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.numVtaC}" target="numVtaC" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+          <Property name="incompletePathValue" type="java.lang.String" value="null"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="numVtaC" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="diaField">
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.dia}" target="diaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="diaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXComboBox" name="documentoCBox">
+      <BindingProperties>
+        <BindingProperty name="elements" source="lstDocumento" target="documentoCBox" targetPath="elements" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="selectedItem" source="masterTable" sourcePath="${selectedElement.idDoc}" target="documentoCBox" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="documentoCBox" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="NFormField">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.NForm}" target="NFormField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="NFormField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="codOrg">
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.codigoOrg.codigoOrg}" target="codOrg" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="codOrg" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="codOrgActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="nombreOrgField">
+      <Properties>
+        <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.codigoOrg.nombreOrg}" target="nombreOrgField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="nombreOrgField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="numRegField">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="2"/>
+        <Property name="focusable" type="boolean" value="false"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.codigoOrg.regIvaOrg}" target="numRegField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="numRegField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="exentaVentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.exentaVenta}" target="exentaVentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="exentaVentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="gravadaVentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.gravadaVenta}" target="gravadaVentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="gravadaVentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="ivaVentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.ivaVenta}" target="ivaVentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="ivaVentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="ivaVentaFieldFocusGained"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="totalExentaVentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.totalExentaVenta}" target="totalExentaVentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="totalExentaVentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="totalGravadaVentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.totalGravadaVenta}" target="totalGravadaVentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="totalGravadaVentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="totalIvaVentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.totalIvaVenta}" target="totalIvaVentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="totalIvaVentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="totalIvaVentaFieldFocusGained"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="totVentaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.totVenta}" target="totVentaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="totVentaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+      <Events>
+        <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="totVentaFieldFocusGained"/>
+      </Events>
+    </Component>
+    <Component class="com.controles.JXTextFiled" name="totIvaField">
+      <Properties>
+        <Property name="decimal" type="boolean" value="true"/>
+      </Properties>
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.totIva}" target="totIvaField" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="totIvaField" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Component class="com.controles.JXComboBox" name="sucursalCBox">
+      <BindingProperties>
+        <BindingProperty name="elements" source="lstSucursal" target="sucursalCBox" targetPath="elements" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="selectedItem" source="masterTable" sourcePath="${selectedElement.codigoSucursal}" target="sucursalCBox" targetPath="selectedItem" updateStrategy="0" immediately="false"/>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="sucursalCBox" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="masterScrollPane">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="com.controles.JXTable" name="masterTable">
+          <Properties>
+            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+              <TableColumnModel selectionModel="0">
+                <Column maxWidth="-1" minWidth="-1" prefWidth="40" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="40" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="160" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="100" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="180" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="250" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="150" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                  <Title/>
+                  <Editor/>
+                  <Renderer/>
+                </Column>
+              </TableColumnModel>
+            </Property>
+            <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
+              <TableHeader reorderingAllowed="true" resizingAllowed="true"/>
+            </Property>
+          </Properties>
+          <BindingProperties>
+            <BindingProperty name="elements" source="lstVtaContribuyente" target="masterTable" targetPath="elements" updateStrategy="0" immediately="true">
+              <Subbinding sourcePath="${numVtaC}">
+                <BindingParameter name="NAME" value="#"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${dia}">
+                <BindingParameter name="NAME" value="Dia"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="Integer.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${idDoc}">
+                <BindingParameter name="NAME" value="Documento"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Documento.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${NCompVenta}">
+                <BindingParameter name="NAME" value="# Documento"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${NForm}">
+                <BindingParameter name="NAME" value="Formulario Unico"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoOrg}">
+                <BindingParameter name="NAME" value="C&#xf3;digo Cliente"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Organizacion.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoOrg.nombreOrg}">
+                <BindingParameter name="NAME" value="Nombre Cliente"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.EDITABLE" value="false"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoOrg.nitOrg}">
+                <BindingParameter name="NAME" value="N.I.T."/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.EDITABLE" value="false"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoOrg.regIvaOrg}">
+                <BindingParameter name="NAME" value="# Registro"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="String.class"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.EDITABLE" value="false"/>
+              </Subbinding>
+              <Subbinding sourcePath="${exentaVenta}">
+                <BindingParameter name="NAME" value="Ventas Exentas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${gravadaVenta}">
+                <BindingParameter name="NAME" value="Ventas Gravadas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${ivaVenta}">
+                <BindingParameter name="NAME" value="D&#xe9;bito Fiscal"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${totalExentaVenta}">
+                <BindingParameter name="NAME" value="Terceros Exentas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${totalGravadaVenta}">
+                <BindingParameter name="NAME" value="Terceros Gravadas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${totalIvaVenta}">
+                <BindingParameter name="NAME" value="D&#xe9;bito Terceros"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${totIva}">
+                <BindingParameter name="NAME" value="Impuesto Percibido"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${totVenta}">
+                <BindingParameter name="NAME" value="Total Ventas"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="java.math.BigDecimal.class"/>
+              </Subbinding>
+              <Subbinding sourcePath="${codigoSucursal}">
+                <BindingParameter name="NAME" value="Sucursal"/>
+                <BindingParameter name="javax.swing.binding.ParameterKeys.COLUMN_CLASS" value="com.entidades.Sucursal.class"/>
+              </Subbinding>
+            </BindingProperty>
+          </BindingProperties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="masterTableMouseClicked"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="false"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="2"/>
+          </AuxValues>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="com.controles.JXTextFiled" name="txtDocumento">
+      <BindingProperties>
+        <BindingProperty name="text" source="masterTable" sourcePath="${selectedElement.NCompVenta}" target="txtDocumento" targetPath="text" updateStrategy="0" immediately="false">
+          <BindingParameter name="javax.swing.binding.ParameterKeys.TEXT_CHANGE_STRATEGY" value="javax.swing.binding.TextChangeStrategy.ON_TYPE"/>
+        </BindingProperty>
+        <BindingProperty name="enabled" source="masterTable" sourcePath="${selectedElement != null}" target="txtDocumento" targetPath="enabled" updateStrategy="0" immediately="false"/>
+      </BindingProperties>
+    </Component>
+  </SubComponents>
+</Form>
